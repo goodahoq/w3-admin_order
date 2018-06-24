@@ -2,7 +2,7 @@
 @import './base/color';
 @import './base/spacing';
 @import './base/animated';
-body {
+#app {
   font-family: Roboto-Medium;
   background-color: $grey1;
   color: #000000;
