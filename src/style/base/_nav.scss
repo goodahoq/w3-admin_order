@@ -1,0 +1,43 @@
+@import './color';
+.navBar {
+  background-color: #000;
+  ul {
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+}
+
+.navBar__Name {
+  font-size: 16px;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navBar__title {
+  font-size: 24px;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #fff;
+  transition: 200ms all ease-in;
+  &:hover {
+    color: $grey1;
+    letter-spacing: 3px;
+  }
+}
+
+.navBar__item {
+  font-size: 18px;
+  padding: 15px 0;
+  cursor: pointer;
+  color: $grey4;
+  transition: 200ms all ease;
+  &:hover {
+    color: $grey3;
+  }
+  &.active {
+    color: #fff;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #fff;
+  }
+}

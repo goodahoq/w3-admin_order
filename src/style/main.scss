@@ -1,0 +1,159 @@
+@import './base/nav';
+@import './base/color';
+@import './base/spacing';
+@import './base/animated';
+body {
+  font-family: Roboto-Medium;
+  background-color: $grey1;
+  color: #000000;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.fz-xl {
+  font-size: 24px;
+}
+
+.fz-l {
+  font-size: 20px;
+}
+
+.home {
+  .body {
+    padding: 0 42px;
+  }
+  .overview {
+    margin: 20px 0;
+  }
+  .overview__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .overview__dateRange {
+    font-size: 14px;
+    color: $grey4;
+    @media (min-width: 768px) {
+      white-space: nowrap;
+    }
+  }
+  .content__card {
+    position: relative;
+    border-radius: 3px;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px $grey2;
+  }
+  .content__card-fee {
+    font-weight: 1000;
+    font-size: 36px;
+  }
+  .content__card-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .chart {
+    background-color: #fff;
+  }
+  .eachWebsite {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid $grey2;
+    &:last-child {
+      border: none;
+    }
+  }
+  .website__icon {
+    flex: 2;
+  }
+  .website__url {
+    color: $grey4;
+    flex: 4;
+  }
+  .transaction__fee {
+    flex: 2;
+  }
+  .transaction__fluctuation {
+    flex: 1;
+  }
+  .detailComment {
+    color: $grey4;
+    font-style: italic;
+  }
+  .clearBotton {
+    display: inline-block;
+    border: none !important;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    transition: 200ms all ease-in;
+    .is-disabled {
+      cursor: pointer;
+    }
+  }
+  .clearBotton-green:hover {
+    background: none;
+    color: $green;
+    transform: translate(-2px);
+  }
+  .clearBotton-red:hover {
+    background: none;
+    color: $red;
+    transform: translate(-2px);
+  }
+  .latestOrders__Card {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $grey2;
+    cursor: pointer;
+    transition: 400ms all ease;
+    .content-fee {
+      transition: 400ms all ease;
+    }
+    .content-feeTitle {
+      transition: 400ms all ease;
+    }
+    &:hover {
+      transform: translate(-2px);
+      .content-fee {
+        transform: translate(5px);
+      }
+      .content-feeTitle {
+        transform: translate(-4px);
+      }
+    }
+  }
+  .latestOrders__img {
+    flex: 1;
+    padding: 15px;
+    padding-left: 0px;
+  }
+  .latestOrders__content {
+    flex: 2;
+    .content-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .content-time,
+    .content-people {
+      font-size: 15px;
+      color: $grey3;
+      font-weight: 300;
+    }
+  }
+  .latestOrders__fee {
+    flex: 1;
+    .content-feeTitle {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .content-fee {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
